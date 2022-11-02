@@ -1,0 +1,77 @@
+#Results{
+   transition: .5s;
+
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#resultColors{
+    display: flex;
+    justify-content: space-around;
+    gap: 12vw;
+}
+
+#r_display{
+    width: 11vw;
+    height: 11vw;
+
+    background-color: rgb(255, 0, 0);
+    border: white solid 15px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px #0a090870;
+}
+
+#r_guessDisplay{
+    width: 11vw;
+    height: 11vw;
+
+    background-color: rgb(255, 0, 0);
+    border: white solid 15px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px #0a090870;
+}
+
+.colorText{
+    font-size: 20px;
+}
+
+#scoreReport{
+    text-align: center;
+    font-size: 25px;
+
+    background-color: rgba(0,0,0,.5);
+    padding: 25px;
+
+    border-radius: 10px;
+
+    bottom: 0;
+}
+
+#r_resultHeader{
+    font-size: 40px;
+    text-align: center;
+}
+
+#restartButton{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+
+    width: 20vw;
+    height: 10vh;
+
+    font-size: 2vw;
+    transition: .1s;
+
+    box-shadow: 3px 3px 5px #0a090870;
+}
+
+#restartButton:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 5px #0a090870;
+}

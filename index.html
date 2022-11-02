@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="resaults.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p id ="score">Score: 0</p>
+        <p id="round">Round: 0</p>
+    </nav>
+
+    <section id = "Menu">
+        <h1 id="Title">Guess The Color!</h1>
+
+        <button id = "Play">Play!</button>
+    </section>
+
+    <section id = "Game">
+        <h1 id="G_header">Guess the color within 000 points</h1>
+
+        <div id ="g_UiContainer">
+            <div id = "displayContainer" class="flex">
+                <h1>Guess This Color</h1>
+    
+                <div id = "display"></div>
+            </div>
+    
+            <div id = "guessContainer">
+                <h1>Guess Here:</h1>
+    
+                <div id = "Guess">
+                    <div id = "top">
+                        <form class = "flex">
+                            <label for="red">Red Value</label>
+                            <input id = "red" class="Input" type="range" pattern="[0-9]{3}" placeholder="Enter Number" value="0" max="255">
+    
+                            <label for="green">Green Value</label>
+                            <input id = "green" class="Input" type="range" pattern="[0-9]{3}" placeholder="Enter Number" value="0" max="255">
+    
+                            <label for="blue">Blue Value</label>
+                            <input id = "blue" class="Input" type="range" pattern="[0-9]{3}" placeholder="Enter Number" value="0" max="255">
+                        </form>
+    
+                        <div id = "guessDisplay">
+                        </div>
+                    </div>
+    
+                    <button id="guessButton">Guess!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "Results">
+        <h1 id="r_resultHeader">Guess the color within 000 points</h1>
+       
+        <div id = "resultColors">
+                <div id = "r_displayContainer" class="flex">
+                    <h1>The Color Was</h1>
+    
+                    <div id = "r_display"></div>
+    
+                    <h1 class="colorText" id = "r_randomColorText">rgb(0, 0, 0)</h1>
+                </div>
+    
+                <div id = "r_guessedContainer" class="flex">
+                    <h1>You Guessed: </h1>
+    
+                    <div id = "r_guessDisplay"></div>
+    
+                    <h1 class="colorText" id = "r_guessColorText">rgb(0, 0, 0)</h1>
+                </div>
+    
+        </div>
+    
+        <h1 id = "scoreReport">You Scored: 0</h1>
+
+        <button id = "restartButton">Restart</button>
+
+    </section>
+    
+    <script src="code/MainMenu.js"></script>
+    <script src="code/Game.js"></script>
+    <script src="code/Result.js"></script>
+</body>
+</html>

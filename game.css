@@ -1,0 +1,117 @@
+
+#Game{
+    z-index: -10;
+
+    opacity: 0;
+    transition: .5s;
+
+    color: white;
+    transform: translateY(-35vh);
+
+    pointer-events: none;
+}
+
+#g_UiContainer{
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+}
+
+#Guess{
+    width: 25vw;
+    height: 25vw;
+
+    border-radius: 25px;
+    background-color: rgb(231, 231, 231);
+    padding: 25px;
+
+    color: black;
+    box-shadow: 3px 3px 5px #0a090870; 
+}
+
+#top{
+    display: flex;
+}
+
+.Input{
+    background-color: white;
+    border-radius: 10px;
+    height: 2vw;
+    margin-block: 5px;
+    border: none;
+    box-shadow: 3px 3px 5px #0a090870;
+
+    color: white;
+
+    transition: .1s;
+}
+
+.Input:hover{
+    scale: 1.1;
+}
+
+#display{
+    width: 25vw;
+    height: 25vw;
+
+    background-color: rgb(255, 0, 0);
+    border: white solid 25px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px #0a090870;
+}
+
+#guessDisplay{
+    width: 12vw;
+    height: 10.5vw;
+
+    background-color: rgb(255, 0, 0);
+    margin: 25px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px #0a090870;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#guessButton{
+    width: 90%;
+    height: 8vw;
+
+    margin: 25px;
+    background-color: rgb(246, 244, 244);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 5px #0a090870;
+
+    transition: .1s;
+    font-size: 50px;
+
+    transform-origin: bottom;
+}
+
+#guessButton:hover{
+    scale: 1.02;
+    box-shadow: 5px 5px 5px #0a090870;
+    background-color: white;
+}
+
+#score{
+    font-size: 30px;
+    padding: 3vh;
+    margin: 0;
+}
+
+#round{
+    font-size: 30px;
+    padding: 3vh;
+    margin: 0;
+}
+
+#G_header{
+    pointer-events: none;
+    text-align: center;
+}

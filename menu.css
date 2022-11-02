@@ -1,0 +1,77 @@
+*{
+    font-family: 'Fredoka One', cursive;
+    pointer-events: auto;
+
+    
+}
+
+body{
+    transition: 1s;
+    margin: 0;
+
+   overflow: hidden;
+}
+
+#Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: .5s;
+}
+
+#Title{
+    color: white;
+    font-size: 100px;
+    
+}
+
+#Play{
+    width: 25vw;
+    height: 7vw;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 40px;
+
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 3px 3px 5px #0a090870;
+
+    transition: .1s;
+    
+}
+
+#Play:hover{
+    animation-name: shakeHover;
+    box-shadow: 10px 10px 5px #0a090870;
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 5px #0a090870;
+
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes shake{
+    from{rotate: -2deg;
+         scale:1;}
+    to{rotate: 2deg;
+       scale:1.05;}
+}
+
+@keyframes shakeHover{
+    from{rotate: -2deg;
+         scale:1.1;}
+    to{rotate: 2deg;
+       scale:1.2;}
+}
