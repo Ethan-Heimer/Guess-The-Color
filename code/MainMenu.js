@@ -33,10 +33,10 @@ function ChangeToGame(){
     PlayButton.style.display = "none";
 }
 
-function SwichGameView()
+function SwichToResults()
 {
     Game.style.transform = "translateY(-120vh)"; 
-    Results.style.transform = "translateY(-115vh)";
+    Results.style.transform = "translateY(-100vh)";
 }
 
 function StartGame()
@@ -51,8 +51,6 @@ function StartGame()
 
     ChangeGuessDisplay();
     SetDisplayColor();
-    
-    goalHeader.textContent = `Guess the Color within ${colorRange} color values`;
 
     numberOfRounds--;
 }

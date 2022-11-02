@@ -10,8 +10,6 @@ const scoreEL = document.getElementById("score");
 const r_scoreEl = document.getElementById("scoreReport");
 const roundEl = document.getElementById("round");
 
-const goalHeader = document.getElementById("G_header");
-
 var randomR = 0; 
 var randomG = 0;
 var randomB = 0;
@@ -73,8 +71,8 @@ blueInput.oninput = ChangeGuessDisplay;
 
 guessButton.onclick = () => {
     SetResults();
-    SwichGameView();
-    Guess(colorRange);
+    SwichToResults();
+    Guess();
 };
  
 function SetDisplayColor(){
@@ -96,25 +94,8 @@ function ChangeGuessDisplay(){
 }
 
 
-function Guess(range)
+function Guess()
 {
-    var lowR = Math.floor(randomR - range/2);
-    var highR = Math.floor(randomR + range/2);
-
-    var lowG = Math.floor(randomG - range/2);
-    var highG = Math.floor(randomG + range/2);
-
-    var lowB = Math.floor(randomB - range/2);
-    var highB = Math.floor(randomB + range/2);
-
-    var guessR = GetGuessChannel(1);
-    var guessG = GetGuessChannel(2);
-    var guessB = GetGuessChannel(3);
-
-    var isRedGood = (guessR > lowR && guessR < highR);
-    var isGreenGood = (guessG > lowG && guessG < highG);
-    var isBlueGood = (guessB > lowB && guessB < highB);
-
     score.AddScore = CalculateScore(MaxScore);
 
     if(numberOfRounds > 0){

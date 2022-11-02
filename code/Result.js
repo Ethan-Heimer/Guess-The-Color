@@ -16,10 +16,6 @@ function SetResults()
 
     r_RandomColorText.textContent = rColor;
     r_GuessColorText.textContent = gColor;
-
-    r_ResultHeader.textContent = `Guess the Color within ${colorRange} color values`;
-
-
 }
 
 function StartNewRound()
